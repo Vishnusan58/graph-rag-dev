@@ -1,0 +1,118 @@
+.codePreview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+}
+
+.codePreview h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  background-color: #e0e0e0;
+}
+
+.activeTab {
+  background-color: #0070f3;
+  color: white;
+}
+
+.activeTab:hover {
+  background-color: #0051a8;
+}
+
+.codeContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.codeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.language {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.copyButton {
+  padding: 0.3rem 0.8rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.3s;
+}
+
+.copyButton:hover {
+  background-color: #e0e0e0;
+}
+
+.codeBlock {
+  flex: 1;
+  margin: 0;
+  padding: 1rem;
+  background-color: #282c34;
+  color: #abb2bf;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  overflow: auto;
+}
+
+.codeBlock code {
+  white-space: pre;
+}
+
+.emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  text-align: center;
+}
+
+.emptyState h3 {
+  margin-bottom: 1rem;
+}
+
+.emptyState p {
+  margin: 0.5rem 0;
+}

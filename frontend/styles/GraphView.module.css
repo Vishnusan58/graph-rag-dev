@@ -1,0 +1,86 @@
+.graphView {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+}
+
+.graphView h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.canvasContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.canvas {
+  flex: 1;
+  cursor: grab;
+}
+
+.canvas:active {
+  cursor: grabbing;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-top: 1px solid #eaeaea;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.legendColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+
+.conceptColor {
+  background-color: #4CAF50; /* Green */
+}
+
+.moduleColor {
+  background-color: #2196F3; /* Blue */
+}
+
+.functionColor {
+  background-color: #FFC107; /* Yellow */
+}
+
+.classColor {
+  background-color: #9C27B0; /* Purple */
+}
+
+.emptyState {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  text-align: center;
+}
+
+.emptyState p {
+  margin: 0.5rem 0;
+}

@@ -1,0 +1,9 @@
+langchain
+openai
+neo4j
+py2neo
+fastapi
+uvicorn
+tiktoken
+streamlit
+python-dotenv
